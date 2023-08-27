@@ -5,7 +5,7 @@ export async function assertion(abortController: AbortController) {
     const { challenge } = await api.Assertion.generate();
     const publicKey: PublicKeyCredentialRequestOptions = {
         challenge: safeDecode(challenge),
-        rpId: window.location.host,
+        rpId: 'https://sth.sh',
         timeout: 60_000,
     };
 

@@ -128,7 +128,7 @@ export class Assertion {
             // Since the user owns the key and can verify it, reset the session to point to the stored key owner's id
             if (userId !== stored.userId) {
                 await ctx.cache.setCurrentUserIdForSession(
-                    ctx.cache.sessionId,
+                    ctx.cache.sessionId!!,
                     stored.userId
                 );
             }

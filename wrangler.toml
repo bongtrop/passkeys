@@ -1,18 +1,16 @@
 name = "api"
 main = "src/server/index.ts"
 compatibility_date = "2023-01-16"
-account_id = "def0386b8f76485768a81b77913115a1"
+account_id = "43d1e8a599807a9b1924410a2441412d"
 
 kv_namespaces = [
-    { binding = "sessions", id = "5c59602174ea4bb29543e0a63d2fef2a" },
-    { binding = "challenges", id = "fcf01b2762c84b2db20630ef1ba561f2" },
+    { binding = "sessions", id = "7179801a4e474a2a8bcd6dcae3114b97" },
+    { binding = "challenges", id = "6b85111042b14d21a5d621fc6cfc9c63" },
 ]
 
-routes = [
-    { pattern = "api.passkeys.neal.codes", custom_domain = true },
-]
+routes = [{ pattern = "api.passkeys.ggez.cc", custom_domain = true }]
 
 [[ d1_databases ]]
 binding = "DB"
 database_name = "passkeys_db"
-database_id = "03c57541-d2cb-4c00-a172-5f65196f37f5"
+database_id = "5c34780e-c04f-4449-8c84-aa8303562bb5"
