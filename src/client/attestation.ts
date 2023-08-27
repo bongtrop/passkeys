@@ -11,13 +11,13 @@ export async function attestation(
     const publicKey: PublicKeyCredentialCreationOptions = {
         challenge: safeDecode(challenge),
         rp: {
-            id: window.location.host,
+            id: 'sth.sh',
             name: document.title,
         },
         user: {
             id: encode(userId),
             name: username,
-            displayName: '',
+            displayName: 'Fkkkkkkkkkkkkkkk',
         },
         pubKeyCredParams: [
             {
